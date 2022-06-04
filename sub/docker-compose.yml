@@ -1,0 +1,18 @@
+version: "3.0"
+services:
+  mqtt:
+    build: .  
+    images: alpine-node-sub
+    container_name: sub1
+  mqtt2:
+    images: alpine-node-sub
+    container_name: sub2
+  mqtt3:
+    images: alpine-node-sub
+    container_name: sub3
+  mqtt4:
+    images: alpine-node-sub
+    container_name: sub4
+  mqtt5:
+    images: alpine-node-sub
+    container_name: sub5

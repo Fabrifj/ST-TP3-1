@@ -1,0 +1,15 @@
+{
+  "name": "tp2",
+  "version": "1.0.0",
+  "description": "Trabajo Practico #2",
+  "main": "mqttClient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angulo-Fernandez",
+  "license": "ISC",
+  "dependencies": {
+    "docker-ip-get": "^1.1.5",
+    "mqtt": "^4.2.6"
+  }
+}

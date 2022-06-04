@@ -1,0 +1,26 @@
+version: "3.0"
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    volumes:
+      - $PWD/mosquitto.conf:/mosquitto/mosquitto.conf 
+    ports:
+      - "1883:1883"
+    network:
+      - "ds-net"
+  mqtt:
+    build: .  
+    images: alpine-node-pub
+    container_name: pub1
+  mqtt2:
+    images: alpine-node-pub
+    container_name: pub2
+  mqtt3:
+    images: alpine-node-pub
+    container_name: pub3
+  mqtt4:
+    images: alpine-node-pub
+    container_name: pub4
+  mqtt5:
+    images: alpine-node-pub
+    container_name: pub5
